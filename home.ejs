@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Contacts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        .add-btn {
+            background-color: #28a745;
+            color: white;
+            padding: 8px 14px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .add-btn:hover {
+            background-color: #218838;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            background-color: white;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .action-btn {
+            padding: 5px 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        .edit-btn {
+            background-color: #ffc107;
+            color: black;
+        }
+        .delete-btn {
+            background-color: #dc3545;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>All Contacts</h1>
+    <button class="add-btn">Add New</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Alfred</td>
+                <td>Kuhlman</td>
+                <td>alfred@test.com</td>
+                <td>98989898</td>
+                <td>
+                    <button class="action-btn edit-btn">Edit</button>
+                    <button class="action-btn delete-btn">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Frederick</td>
+                <td>Jerde</td>
+                <td>frederick@test.com</td>
+                <td>54545454</td>
+                <td>
+                    <button class="action-btn edit-btn">Edit</button>
+                    <button class="action-btn delete-btn">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Joannie</td>
+                <td>McLaughlin</td>
+                <td>joannie@test.com</td>
+                <td>75757575</td>
+                <td>
+                    <button class="action-btn edit-btn">Edit</button>
+                    <button class="action-btn delete-btn">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Odie</td>
+                <td>Koss</td>
+                <td>odie@test.com</td>
+                <td>64646464</td>
+                <td>
+                    <button class="action-btn edit-btn">Edit</button>
+                    <button class="action-btn delete-btn">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Edna</td>
+                <td>Ondricka</td>
+                <td>edna@test.com</td>
+                <td>58595858</td>
+                <td>
+                    <button class="action-btn edit-btn">Edit</button>
+                    <button class="action-btn delete-btn">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
+
+
