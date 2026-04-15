@@ -1,29 +1,17 @@
-const express = require('express');
-const app = express();
+const express=require('express');
+const app=express();
 const mongoose=require('mongoose');
-
-app.listen(3000, () => {
-    console.log("Successfully connected to the port 3000");
+const studentRoute=require('./routes/route.student')
+mongoose.connect('mongodb://localhost:27017/crud_data')
+.then(()=>{
+    console.log("Connect Mongodb");
 })
-app.set('view engine', 'ejs');
 app.use(express.json());
+app.use('/api/students', studentRoute);
 app.use(express.urlencoded({extended: false}));
-app.use(express.static('public'));
-app.get('/home', (req, res)=>{
-    res.send("Hello");
-})
-app.get('/add-contact', (req, res)=>{
-    res.render('add-contact');
+app.listen(3000, (req, res)=>{
+  console.log("Express Js run on port 3000");
 });
-app.post('/add-contact', (req, res)=>{
-})
-app.get('/update-contact', (req, res)=>{
-    res.render('update-contact');
-})
-app.post('/update-contact', (req, res)=>{
-})
-app.get('/show-contact', (req, res)=>{
-    res.render('show-contact');
-})
-app.get('/delete-contact', (req, res)=>{
+app.get('/', (req, res)=>{
+    res.send('Send data');
 })
